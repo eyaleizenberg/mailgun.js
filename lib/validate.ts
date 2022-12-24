@@ -1,5 +1,10 @@
-import { IMultipleValidationClient } from './interfaces/MultipleValidation';
-import { ValidationResult, ValidationResponse, ValidationQuery } from './interfaces/Validate';
+import {
+  IMultipleValidationClient,
+  ValidationResult,
+  ValidationResponse,
+  ValidationQuery
+} from './interfaces/Validations/index';
+
 import Request from './request';
 
 export default class ValidateClient {

@@ -11,7 +11,7 @@ import {
   CanceledMultipleValidationJob,
   CreatedMultipleValidationJob,
   MultipleValidationJobsListResult
-} from '../lib/interfaces/MultipleValidation';
+} from '../lib/interfaces/Validations/index';
 
 const filepath = path.resolve(__dirname, './data/emailsValidation1.csv');
 

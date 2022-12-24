@@ -12,7 +12,7 @@ import {
   MultipleValidationJobResult,
   MultipleValidationJobsListQuery
 }
-  from './interfaces/MultipleValidation';
+  from './interfaces/Validations/index';
 import Request from './request';
 
 export class MultipleValidationJob implements MultipleValidationJobResult {
