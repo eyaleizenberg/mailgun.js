@@ -7,7 +7,7 @@ import Request from '../lib/request';
 import DomainsClient from '../lib/Classes/Domains/domains';
 import EventsClient from '../lib/events';
 import WebhooksClient from '../lib/webhooks';
-import SuppressionsClient from '../lib/suppressions';
+import SuppressionsClient from '../lib/Classes/suppressions';
 import MessagesClient from '../lib/messages';
 import RoutesClient from '../lib/routes';
 import ValidateClient from '../lib/validate';

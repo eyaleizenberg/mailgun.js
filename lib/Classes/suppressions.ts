@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import urljoin from 'url-join';
 
-import Request from './request';
+import Request from '../request';
 import {
   SuppressionCreationData,
   SuppressionCreationResponse,
@@ -14,14 +14,18 @@ import {
   SuppressionListResponse,
   SuppressionModels,
   SuppressionResponse,
-} from './interfaces/Suppressions/Suppressions';
-import APIError from './error';
-import APIErrorOptions from './interfaces/APIErrorOptions';
-import { IBounce, BounceData } from './interfaces/Suppressions/Bounce';
-import { IComplaint, ComplaintData } from './interfaces/Suppressions/Complaint';
-import { IUnsubscribe, UnsubscribeData } from './interfaces/Suppressions/Unsubscribe';
-import { IWhiteList, WhiteListData } from './interfaces/Suppressions/WhiteList';
-import NavigationThruPages from './Classes/common/NavigationThruPages';
+  IBounce,
+  BounceData,
+  IComplaint,
+  ComplaintData,
+  IUnsubscribe,
+  UnsubscribeData,
+  IWhiteList,
+  WhiteListData,
+} from '../interfaces/Suppressions/index';
+import APIError from '../error';
+import APIErrorOptions from '../interfaces/APIErrorOptions';
+import NavigationThruPages from './common/NavigationThruPages';
 
 const createOptions = {
   headers: { 'Content-Type': 'application/json' }

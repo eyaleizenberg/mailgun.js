@@ -6,7 +6,7 @@ import { RequestOptions } from './interfaces/RequestOptions';
 import DomainClient from './Classes/Domains/domains';
 import EventClient from './events';
 import StatsClient from './stats';
-import SuppressionClient from './suppressions';
+import SuppressionClient from './Classes/suppressions';
 import WebhookClient from './webhooks';
 import MessagesClient from './messages';
 import RoutesClient from './routes';

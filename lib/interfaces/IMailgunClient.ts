@@ -7,7 +7,7 @@ import ListsClient from '../lists';
 import MessagesClient from '../messages';
 import RoutesClient from '../routes';
 import StatsClient from '../stats';
-import SuppressionClient from '../suppressions';
+import SuppressionClient from '../Classes/suppressions';
 import ValidateClient from '../validate';
 import WebhookClient from '../webhooks';
 
