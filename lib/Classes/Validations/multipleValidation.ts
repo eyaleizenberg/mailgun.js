@@ -13,7 +13,7 @@ import {
   MultipleValidationJobsListQuery
 }
   from '../../interfaces/Validations/index';
-import Request from '../../request';
+import Request from '../common/Request';
 
 export class MultipleValidationJob implements MultipleValidationJobResult {
   createdAt: Date;

@@ -2,13 +2,13 @@ import * as base64 from 'base-64';
 import urljoin from 'url-join';
 import axios, { AxiosError, AxiosResponse } from 'axios';
 import * as NodeFormData from 'form-data';
-import APIError from './error';
-import { OnCallEmptyHeaders, OnCallRequestOptions, RequestOptions } from './interfaces/RequestOptions';
-import APIErrorOptions from './interfaces/APIErrorOptions';
-import { InputFormData } from './interfaces/IFormData';
-import APIResponse from './interfaces/ApiResponse';
-import FormDataBuilder from './formDataBuilder';
-import { IpPoolDeleteData } from './interfaces/IpPools';
+import APIError from './Error';
+import { OnCallEmptyHeaders, OnCallRequestOptions, RequestOptions } from '../../interfaces/RequestOptions';
+import APIErrorOptions from '../../interfaces/APIErrorOptions';
+import { InputFormData } from '../../interfaces/IFormData';
+import APIResponse from '../../interfaces/ApiResponse';
+import FormDataBuilder from './FormDataBuilder';
+import { IpPoolDeleteData } from '../../interfaces/IpPools';
 
 class Request {
   private username: string;

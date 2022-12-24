@@ -1,28 +1,28 @@
 /* eslint-disable camelcase */
-import Request from './request';
-import Options from './interfaces/Options';
-import { RequestOptions } from './interfaces/RequestOptions';
+import Request from './common/Request';
+import MailgunClientOptions from '../interfaces/MailgunClientOptions';
+import { RequestOptions } from '../interfaces/RequestOptions';
 
-import DomainClient from './Classes/Domains/domains';
-import EventClient from './events';
-import StatsClient from './stats';
-import SuppressionClient from './Classes/suppressions';
-import WebhookClient from './webhooks';
-import MessagesClient from './messages';
-import RoutesClient from './routes';
-import ValidateClient from './Classes/Validations/validate';
-import IpsClient from './ips';
-import IpPoolsClient from './ip-pools';
-import ListsClient from './Classes/MailingLists/mailingLists';
-import MailListsMembers from './Classes/MailingLists/mailListMembers';
-import { InputFormData } from './interfaces/IFormData';
-import DomainCredentialsClient from './Classes/Domains/domainsCredentials';
-import MultipleValidationClient from './Classes/Validations/multipleValidation';
-import DomainTemplatesClient from './Classes/Domains/domainsTemplates';
-import DomainTagsClient from './Classes/Domains/domainsTags';
-import { IMailgunClient } from './interfaces/IMailgunClient';
+import DomainClient from './Domains/domains';
+import EventClient from './Events';
+import StatsClient from './Stats';
+import SuppressionClient from './Suppressions';
+import WebhooksClient from './Webhooks';
+import MessagesClient from './Messages';
+import RoutesClient from './Routes';
+import ValidateClient from './Validations/validate';
+import IpsClient from './IPs';
+import IpPoolsClient from './IPPools';
+import ListsClient from './MailingLists/mailingLists';
+import MailListsMembers from './MailingLists/mailListMembers';
+import { InputFormData } from '../interfaces/IFormData';
+import DomainCredentialsClient from './Domains/domainsCredentials';
+import MultipleValidationClient from './Validations/multipleValidation';
+import DomainTemplatesClient from './Domains/domainsTemplates';
+import DomainTagsClient from './Domains/domainsTags';
+import { IMailgunClient } from '../interfaces/IMailgunClient';
 
-export default class Client implements IMailgunClient {
+export default class MailgunClient implements IMailgunClient {
   private request;
 
   public domains;
@@ -37,7 +37,7 @@ export default class Client implements IMailgunClient {
   public ip_pools;
   public lists;
 
-  constructor(options: Options, formData: InputFormData) {
+  constructor(options: MailgunClientOptions, formData: InputFormData) {
     const config: RequestOptions = { ...options } as RequestOptions;
 
     if (!config.url) {
@@ -66,7 +66,7 @@ export default class Client implements IMailgunClient {
       domainTemplatesClient,
       domainTagsClient
     );
-    this.webhooks = new WebhookClient(this.request);
+    this.webhooks = new WebhooksClient(this.request);
     this.events = new EventClient(this.request);
     this.stats = new StatsClient(this.request);
     this.suppressions = new SuppressionClient(this.request);

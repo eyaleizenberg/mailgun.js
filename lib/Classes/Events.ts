@@ -1,12 +1,12 @@
 import urljoin from 'url-join';
-import NavigationThruPages from './Classes/common/NavigationThruPages';
+import NavigationThruPages from './common/NavigationThruPages';
 import {
   EventsList,
   EventsQuery,
   EventsResponse,
-} from './interfaces/Events';
+} from '../interfaces/Events';
 
-import Request from './request';
+import Request from './common/Request';
 
 export default class EventClient
   extends NavigationThruPages<EventsList> {

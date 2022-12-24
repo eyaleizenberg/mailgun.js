@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
- interface Options {
+ interface MailgunClientOptions {
   username: string;
   key: string;
   url?: string;
@@ -7,4 +7,4 @@
   timeout?: number;
 }
 
-export default Options;
+export default MailgunClientOptions;

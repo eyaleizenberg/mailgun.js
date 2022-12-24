@@ -1,5 +1,5 @@
 import urljoin from 'url-join';
-import APIError from '../../error';
+import APIError from './Error';
 import APIErrorOptions from '../../interfaces/APIErrorOptions';
 import {
   PagesListAccumulator,
@@ -13,7 +13,7 @@ import { BounceData, IBounce } from '../../interfaces/Suppressions/Bounce';
 import { ComplaintData, IComplaint } from '../../interfaces/Suppressions/Complaint';
 import { IUnsubscribe, UnsubscribeData } from '../../interfaces/Suppressions/Unsubscribe';
 import { IWhiteList, WhiteListData } from '../../interfaces/Suppressions/WhiteList';
-import Request from '../../request';
+import Request from './Request';
 
 export default abstract class NavigationThruPages <T> {
   request?: Request;

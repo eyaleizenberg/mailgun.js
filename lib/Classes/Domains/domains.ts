@@ -33,10 +33,10 @@ import {
 } from '../../interfaces/Domains/index';
 
 import APIResponse from '../../interfaces/ApiResponse';
-import APIError from '../../error';
+import APIError from '../common/Error';
 import APIErrorOptions from '../../interfaces/APIErrorOptions';
 
-import Request from '../../request';
+import Request from '../common/Request';
 
 import { IDomainCredentials } from '../../interfaces/Domains/DomainCredentials';
 

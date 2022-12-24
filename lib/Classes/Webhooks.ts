@@ -6,8 +6,8 @@ import {
   WebhookResponse,
   WebhooksIds,
   WebhooksQuery
-} from './interfaces/Webhooks';
-import Request from './request';
+} from '../interfaces/Webhooks';
+import Request from './common/Request';
 
 class Webhook {
   id: string;
@@ -19,7 +19,7 @@ class Webhook {
   }
 }
 
-export default class WebhookClient {
+export default class WebhooksClient {
   request: Request;
 
   constructor(request: Request) {

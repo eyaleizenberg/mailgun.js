@@ -5,7 +5,7 @@ import {
   ValidationQuery
 } from '../../interfaces/Validations/index';
 
-import Request from '../../request';
+import Request from '../common/Request';
 
 export default class ValidateClient {
   public multipleValidation;

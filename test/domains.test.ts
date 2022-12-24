@@ -2,7 +2,7 @@ import formData from 'form-data';
 
 import nock from 'nock';
 import { expect } from 'chai';
-import Request from '../lib/request';
+import Request from '../lib/Classes/common/Request';
 import DomainClient, { Domain } from '../lib/Classes/Domains/domains';
 import { RequestOptions } from '../lib/interfaces/RequestOptions';
 import { InputFormData } from '../lib/interfaces/IFormData';

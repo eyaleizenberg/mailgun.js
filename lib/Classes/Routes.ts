@@ -1,7 +1,7 @@
 import {
   CreateUpdateRouteData, DestroyRouteResponse, Route, RoutesListQuery, UpdateRouteResponse
-} from './interfaces/routes';
-import Request from './request';
+} from '../interfaces/routes';
+import Request from './common/Request';
 
 export default class RoutesClient {
   request: Request;

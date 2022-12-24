@@ -1,6 +1,6 @@
 import urljoin from 'url-join';
-import Request from './request';
-import { StatsQuery, StatsOptions, Stat } from './interfaces/StatsOptions';
+import Request from './common/Request';
+import { StatsQuery, StatsOptions, Stat } from '../interfaces/StatsOptions';
 
 class Stats {
   start: Date;

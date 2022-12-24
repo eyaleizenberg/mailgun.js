@@ -1,7 +1,7 @@
 import nock from 'nock';
 import formData from 'form-data';
 
-import Request from '../lib/request';
+import Request from '../lib/Classes/common/Request';
 import ListsClient from '../lib/Classes/MailingLists/mailingLists';
 import { RequestOptions } from '../lib/interfaces/RequestOptions';
 import MailListMembers from '../lib/Classes/MailingLists/mailListMembers';

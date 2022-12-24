@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import Request from './request';
+import Request from './common/Request';
 
 import {
   IpPoolCreateData,
@@ -11,7 +11,7 @@ import {
   IpPoolMessageResponse,
   IpPoolMessageResult,
   IpPoolUpdateData,
-} from './interfaces/IpPools';
+} from '../interfaces/IpPools';
 
 export default class IpPoolsClient {
   request: Request;

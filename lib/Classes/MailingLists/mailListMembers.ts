@@ -1,5 +1,5 @@
 import urljoin from 'url-join';
-import Request from '../../request';
+import Request from '../common/Request';
 import {
   MailListMembersQuery,
   IMailListsMembers,
