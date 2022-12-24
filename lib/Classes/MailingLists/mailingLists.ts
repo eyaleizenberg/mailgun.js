@@ -1,4 +1,4 @@
-import Request from './request';
+import Request from '../../request';
 import {
   ListsQuery,
   CreateUpdateList,
@@ -10,9 +10,9 @@ import {
   CancelValidationResult,
   MailingListResult,
   MailingListApiResponse
-} from './interfaces/lists';
-import { IMailListsMembers } from './interfaces/mailListMembers';
-import NavigationThruPages from './Classes/common/NavigationThruPages';
+} from '../../interfaces/MailingLists';
+import { IMailListsMembers } from '../../interfaces/MailingLists/MailingListMembers';
+import NavigationThruPages from '../common/NavigationThruPages';
 
 export default class ListsClient
   extends NavigationThruPages<MailingListResult> {

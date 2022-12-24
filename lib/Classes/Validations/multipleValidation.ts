@@ -1,5 +1,5 @@
-import NavigationThruPages from './Classes/common/NavigationThruPages';
-import APIResponse from './interfaces/ApiResponse';
+import NavigationThruPages from '../common/NavigationThruPages';
+import APIResponse from '../../interfaces/ApiResponse';
 import {
   CanceledMultipleValidationJob,
   CreatedMultipleValidationJob,
@@ -12,8 +12,8 @@ import {
   MultipleValidationJobResult,
   MultipleValidationJobsListQuery
 }
-  from './interfaces/Validations/index';
-import Request from './request';
+  from '../../interfaces/Validations/index';
+import Request from '../../request';
 
 export class MultipleValidationJob implements MultipleValidationJobResult {
   createdAt: Date;

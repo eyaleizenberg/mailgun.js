@@ -1,5 +1,5 @@
-import { MailingList } from './lists';
-import { PagesList, ParsedPagesList } from './NavigationThruPages';
+import { MailingList } from './MailingLists';
+import { PagesList, ParsedPagesList } from '../NavigationThruPages';
 
 export interface MailListMember {
     address: string;

@@ -10,11 +10,11 @@ import WebhooksClient from '../lib/webhooks';
 import SuppressionsClient from '../lib/Classes/suppressions';
 import MessagesClient from '../lib/messages';
 import RoutesClient from '../lib/routes';
-import ValidateClient from '../lib/validate';
+import ValidateClient from '../lib/Classes/Validations/validate';
 
 import { InputFormData } from '../lib/interfaces/IFormData';
 import StatsClient from '../lib/stats';
-import ListsClient from '../lib/lists';
+import ListsClient from '../lib/Classes/MailingLists/mailingLists';
 import IpPoolsClient from '../lib/ip-pools';
 import IpsClient from '../lib/ips';
 

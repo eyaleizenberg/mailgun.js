@@ -2,15 +2,15 @@ import nock from 'nock';
 import formData from 'form-data';
 
 import Request from '../lib/request';
-import ListsClient from '../lib/lists';
+import ListsClient from '../lib/Classes/MailingLists/mailingLists';
 import { RequestOptions } from '../lib/interfaces/RequestOptions';
-import MailListMembers from '../lib/mailListMembers';
+import MailListMembers from '../lib/Classes/MailingLists/mailListMembers';
 import {
   CancelValidationResult,
   MailingList,
   StartValidationResult,
   ValidationResult
-} from '../lib/interfaces/lists';
+} from '../lib/interfaces/MailingLists';
 import { InputFormData } from '../lib/interfaces/IFormData';
 
 describe('ListsClient', function () {

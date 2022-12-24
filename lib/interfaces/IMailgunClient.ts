@@ -3,12 +3,12 @@ import DomainClient from '../Classes/Domains/domains';
 import EventClient from '../events';
 import IpPoolsClient from '../ip-pools';
 import IpsClient from '../ips';
-import ListsClient from '../lists';
+import ListsClient from '../Classes/MailingLists/mailingLists';
 import MessagesClient from '../messages';
 import RoutesClient from '../routes';
 import StatsClient from '../stats';
 import SuppressionClient from '../Classes/suppressions';
-import ValidateClient from '../validate';
+import ValidateClient from '../Classes/Validations/validate';
 import WebhookClient from '../webhooks';
 
 export interface IMailgunClient {

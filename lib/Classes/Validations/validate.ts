@@ -3,9 +3,9 @@ import {
   ValidationResult,
   ValidationResponse,
   ValidationQuery
-} from './interfaces/Validations/index';
+} from '../../interfaces/Validations/index';
 
-import Request from './request';
+import Request from '../../request';
 
 export default class ValidateClient {
   public multipleValidation;
