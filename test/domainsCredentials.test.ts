@@ -4,8 +4,8 @@ import nock from 'nock';
 import Request from '../lib/request';
 import { RequestOptions } from '../lib/interfaces/RequestOptions';
 import { InputFormData } from '../lib/interfaces/IFormData';
-import DomainCredentialsClient from '../lib/domainsCredentials';
-import { DomainCredentialsList, DomainCredentialsResult } from '../lib/interfaces/DomainCredentials';
+import DomainCredentialsClient from '../lib/Classes/Domains/domainsCredentials';
+import { DomainCredentialsList, DomainCredentialsResult } from '../lib/interfaces/Domains/index';
 
 // TODO: fix types
 describe('DomainsCredentialsClient', function () {

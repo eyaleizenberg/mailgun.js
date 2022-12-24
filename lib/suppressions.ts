@@ -21,7 +21,7 @@ import { IBounce, BounceData } from './interfaces/Suppressions/Bounce';
 import { IComplaint, ComplaintData } from './interfaces/Suppressions/Complaint';
 import { IUnsubscribe, UnsubscribeData } from './interfaces/Suppressions/Unsubscribe';
 import { IWhiteList, WhiteListData } from './interfaces/Suppressions/WhiteList';
-import NavigationThruPages from './common/NavigationThruPages';
+import NavigationThruPages from './Classes/common/NavigationThruPages';
 
 const createOptions = {
   headers: { 'Content-Type': 'application/json' }

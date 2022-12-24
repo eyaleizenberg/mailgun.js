@@ -1,4 +1,4 @@
-import NavigationThruPages from './common/NavigationThruPages';
+import NavigationThruPages from './Classes/common/NavigationThruPages';
 import APIResponse from './interfaces/ApiResponse';
 import {
   CanceledMultipleValidationJob,

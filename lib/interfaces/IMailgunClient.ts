@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import DomainClient from '../domains';
+import DomainClient from '../Classes/Domains/domains';
 import EventClient from '../events';
 import IpPoolsClient from '../ip-pools';
 import IpsClient from '../ips';

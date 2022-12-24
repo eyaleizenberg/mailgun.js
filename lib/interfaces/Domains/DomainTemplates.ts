@@ -1,5 +1,5 @@
-import { DomainTemplateItem } from '../domainsTemplates';
-import { PagesList, ParsedPagesList } from './NavigationThruPages';
+import { DomainTemplateItem } from '../../Classes/Domains/domainsTemplates';
+import { PagesList, ParsedPagesList } from '../NavigationThruPages';
 
 export enum YesNo {
     YES = 'yes',

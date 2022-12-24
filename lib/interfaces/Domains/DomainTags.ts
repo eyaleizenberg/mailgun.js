@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
-import { DomainTagStatistic } from '../domainsTags';
-import { PagesList, ParsedPagesList } from './NavigationThruPages';
+import { DomainTagStatistic } from '../../Classes/Domains/domainsTags';
+import { PagesList, ParsedPagesList } from '../NavigationThruPages';
 
 export enum Resolution {
     HOUR = 'hour',

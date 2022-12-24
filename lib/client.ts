@@ -3,7 +3,7 @@ import Request from './request';
 import Options from './interfaces/Options';
 import { RequestOptions } from './interfaces/RequestOptions';
 
-import DomainClient from './domains';
+import DomainClient from './Classes/Domains/domains';
 import EventClient from './events';
 import StatsClient from './stats';
 import SuppressionClient from './suppressions';
@@ -16,10 +16,10 @@ import IpPoolsClient from './ip-pools';
 import ListsClient from './lists';
 import MailListsMembers from './mailListMembers';
 import { InputFormData } from './interfaces/IFormData';
-import DomainCredentialsClient from './domainsCredentials';
+import DomainCredentialsClient from './Classes/Domains/domainsCredentials';
 import MultipleValidationClient from './multipleValidation';
-import DomainTemplatesClient from './domainsTemplates';
-import DomainTagsClient from './domainsTags';
+import DomainTemplatesClient from './Classes/Domains/domainsTemplates';
+import DomainTagsClient from './Classes/Domains/domainsTags';
 import { IMailgunClient } from './interfaces/IMailgunClient';
 
 export default class Client implements IMailgunClient {

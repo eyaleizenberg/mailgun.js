@@ -1,6 +1,6 @@
 import urljoin from 'url-join';
-import APIResponse from './interfaces/ApiResponse';
-import Request from './request';
+import APIResponse from '../../interfaces/ApiResponse';
+import Request from '../../request';
 
 import {
   CreatedUpdatedDomainCredentialsResponse,
@@ -12,7 +12,7 @@ import {
   DomainCredentialsResult,
   IDomainCredentials,
   UpdateDomainCredentialsData
-} from './interfaces/DomainCredentials';
+} from '../../interfaces/Domains/DomainCredentials';
 
 export default class DomainCredentialsClient implements IDomainCredentials {
   baseRoute: string;

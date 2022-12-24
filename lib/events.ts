@@ -1,5 +1,5 @@
 import urljoin from 'url-join';
-import NavigationThruPages from './common/NavigationThruPages';
+import NavigationThruPages from './Classes/common/NavigationThruPages';
 import {
   EventsList,
   EventsQuery,

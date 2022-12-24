@@ -1,6 +1,6 @@
 import urljoin from 'url-join';
-import APIResponse from './interfaces/ApiResponse';
-import Request from './request';
+import APIResponse from '../../interfaces/ApiResponse';
+import Request from '../../request';
 
 import {
   DomainTagAPIResponseStatsItem,
@@ -22,8 +22,8 @@ import {
   DomainTagStatisticResult,
   IDomainTagsClient,
   Resolution
-} from './interfaces/DomainTags';
-import NavigationThruPages from './common/NavigationThruPages';
+} from '../../interfaces/Domains';
+import NavigationThruPages from '../common/NavigationThruPages';
 
 export class DomainTag implements DomainTagsItem {
   tag: string;

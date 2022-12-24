@@ -1,5 +1,5 @@
 import urljoin from 'url-join';
-import Request from './request';
+import Request from '../../request';
 
 import {
   CreateDomainTemplateAPIResponse,
@@ -25,8 +25,8 @@ import {
   TemplateVersion,
   UpdateOrDeleteDomainTemplateAPIResponse,
   UpdateOrDeleteDomainTemplateResult
-} from './interfaces/DomainTemplates';
-import NavigationThruPages from './common/NavigationThruPages';
+} from '../../interfaces/Domains';
+import NavigationThruPages from '../common/NavigationThruPages';
 
 export class DomainTemplateItem implements DomainTemplate {
   name : string;

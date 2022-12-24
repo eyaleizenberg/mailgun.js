@@ -4,7 +4,7 @@ import { expect } from 'chai';
 
 import Client from '../lib/client';
 import Request from '../lib/request';
-import DomainsClient from '../lib/domains';
+import DomainsClient from '../lib/Classes/Domains/domains';
 import EventsClient from '../lib/events';
 import WebhooksClient from '../lib/webhooks';
 import SuppressionsClient from '../lib/suppressions';

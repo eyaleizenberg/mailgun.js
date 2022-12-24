@@ -21,27 +21,27 @@ import {
   UpdatedWebPrefixResponse,
   ReplacementForPool,
   MessageResponse,
-} from './interfaces/Domains';
-
-import APIResponse from './interfaces/ApiResponse';
-import APIError from './error';
-import APIErrorOptions from './interfaces/APIErrorOptions';
-
-import Request from './request';
-import {
   DomainTrackingResponse,
   DomainTrackingData,
   OpenTrackingInfo,
   ClickTrackingInfo,
   UnsubscribeTrackingInfo,
   UpdateDomainTrackingResponse,
-  UpdatedOpenTracking
-} from './interfaces/DomainTracking';
-import { IDomainCredentials } from './interfaces/DomainCredentials';
-import { IDomainTemplatesClient } from './interfaces/DomainTemplates';
+  UpdatedOpenTracking,
+  IDomainTemplatesClient,
+  IDomainTagsClient
+} from '../../interfaces/Domains/index';
+
+import APIResponse from '../../interfaces/ApiResponse';
+import APIError from '../../error';
+import APIErrorOptions from '../../interfaces/APIErrorOptions';
+
+import Request from '../../request';
+
+import { IDomainCredentials } from '../../interfaces/Domains/DomainCredentials';
+
 import DomainCredentialsClient from './domainsCredentials';
 import DomainTemplatesClient from './domainsTemplates';
-import { IDomainTagsClient } from './interfaces/DomainTags';
 import DomainTagsClient from './domainsTags';
 
 export class Domain {

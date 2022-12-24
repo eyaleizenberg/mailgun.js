@@ -12,7 +12,7 @@ import {
   MailingListApiResponse
 } from './interfaces/lists';
 import { IMailListsMembers } from './interfaces/mailListMembers';
-import NavigationThruPages from './common/NavigationThruPages';
+import NavigationThruPages from './Classes/common/NavigationThruPages';
 
 export default class ListsClient
   extends NavigationThruPages<MailingListResult> {
