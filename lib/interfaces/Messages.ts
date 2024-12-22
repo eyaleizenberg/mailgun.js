@@ -43,7 +43,7 @@ export type MailgunMessageData = MailgunMessageContent & {
      *
      * @example `Bob <bob@host.com>`. You can use commas to separate multiple recipients.
      */
-    to?: string | string[];
+    to: string | string[];
 
     /**
      * Same as `To` but for `carbon copy`
